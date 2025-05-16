@@ -1,8 +1,6 @@
 import Image from "next/image";
-import dashboardLight from "@/public/_static/images/dashboard-light.png";
-import dashboardDark from "@/public/_static/images/dashboard-dark.png";
-import studentView from "@/public/_static/images/student-view.png";
-import adminView from "@/public/_static/images/admin-view.png";
+import darkPreview from "@/public/_static/images/dark-preview.jpg";
+import lightPreview from "@/public/_static/images/light-preview.jpg";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
 import { Check } from "lucide-react";
 
@@ -17,7 +15,7 @@ export default function PreviewLanding() {
           <div className="h-auto rounded-xl bg-muted/30 p-3.5 ring-1 ring-inset ring-border">
             <div className="relative overflow-hidden rounded-xl border">
               <Image
-                src={dashboardLight}
+                src={lightPreview}
                 alt="Main dashboard light mode"
                 className="flex size-full object-contain object-center dark:hidden"
                 width={1200}
@@ -25,7 +23,7 @@ export default function PreviewLanding() {
                 priority
               />
               <Image
-                src={dashboardDark}
+                src={darkPreview}
                 alt="Main dashboard dark mode"
                 className="hidden size-full object-contain object-center dark:flex"
                 width={1200}
@@ -39,7 +37,7 @@ export default function PreviewLanding() {
           </div>
 
           {/* Student View */}
-          <div className="h-auto rounded-xl bg-muted/30 p-3.5 ring-1 ring-inset ring-border">
+          {/* <div className="h-auto rounded-xl bg-muted/30 p-3.5 ring-1 ring-inset ring-border">
             <div className="relative overflow-hidden rounded-xl border">
               <Image
                 src={studentView}
@@ -53,10 +51,10 @@ export default function PreviewLanding() {
                 Student Portal
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Admin View */}
-          <div className="h-auto rounded-xl bg-muted/30 p-3.5 ring-1 ring-inset ring-border md:col-span-2">
+          {/* <div className="h-auto rounded-xl bg-muted/30 p-3.5 ring-1 ring-inset ring-border md:col-span-2">
             <div className="relative overflow-hidden rounded-xl border">
               <Image
                 src={adminView}
@@ -70,7 +68,7 @@ export default function PreviewLanding() {
                 School Administrator Dashboard
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
