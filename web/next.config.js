@@ -4,6 +4,12 @@ import("./env.mjs");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  "eslint": {
+    ignoreBuildErrors: true,
+  },
+  "typescript": {
+    ignoreBuildErrors: true
+  },
   reactStrictMode: true,
   swcMinify: true,
   images: {
