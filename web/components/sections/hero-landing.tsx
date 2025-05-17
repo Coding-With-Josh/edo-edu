@@ -61,7 +61,7 @@ export default function HeroLanding() {
                 rounded: "xl",
                 size: "lg",
               }),
-              "px-4 text-[15px] text-blue-600 hover:bg-blue-50"
+              "px-4 text-[15px] text-blue-600 hover:opacity-80"
             )}
           >
             <HelpCircle className="mr-2 size-4" />
@@ -76,7 +76,7 @@ export default function HeroLanding() {
             { name: "Teachers", count: "15K+", icon: "👩‍🏫" },
             { name: "Staff", count: "8K+", icon: "👨‍💼" },
           ].map((stat) => (
-            <div key={stat.name} className="rounded-xl border p-4 text-center">
+            <div key={stat.name} className="rounded-xl border py-4 px-6 text-center">
               <div className="text-2xl">{stat.icon}</div>
               <div className="text-lg font-bold">{stat.count}</div>
               <div className="text-sm text-muted-foreground">{stat.name}</div>
